@@ -7,7 +7,7 @@ import java.nio.*;
 /**
  * Created by myltik on 18/01/2016.
  */
-public class AgentConverterExampleTest {
+public class BracketsDataConverterTest {
 
     @org.junit.Test
     public void testConvertDummy() throws Exception {
@@ -24,7 +24,7 @@ public class AgentConverterExampleTest {
 
     @org.junit.Test
     public void testConvertString() throws Exception {
-        final IDataConverter converter = new AgentConverterExample();
+        final IDataConverter converter = new BracketsDataConverter();
         final String dataStr = "hello there!! :)";
         final byte[] dataBin = dataStr.getBytes();
         final byte[] expectedBin = ("{" + dataStr + "}").getBytes();

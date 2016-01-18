@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
  *
  * Created by myltik on 12/01/2016.
  */
-public class AgentConverterExample implements IDataConverter {
+public class BracketsDataConverter implements IDataConverter {
 
     @Override
     public ByteBuffer convert(ByteBuffer data) throws DataConversionException {
