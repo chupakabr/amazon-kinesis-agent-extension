@@ -7,9 +7,18 @@
     <groupId>com.amazonaws</groupId>
     <artifactId>amazon-kinesis-agent-extension</artifactId>
     <version>1.0</version>
+
     <name>Amazon Kinesis Agent Extensions library</name>
     <packaging>jar</packaging>
     <description>Extension interfaces for Amazon Kinesis Agent https://github.com/awslabs/amazon-kinesis-agent</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <defaultGoal>verify</defaultGoal>
