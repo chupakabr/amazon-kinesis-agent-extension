@@ -10,19 +10,6 @@ import java.nio.*;
 public class BracketsDataConverterTest {
 
     @org.junit.Test
-    public void testConvertDummy() throws Exception {
-        final IDataConverter converter = new DummyDataConverter();
-        final byte[] dataBin = "hello there!! :)".getBytes();
-
-        ByteBuffer data = ByteBuffer.wrap(dataBin);
-        ByteBuffer res = converter.convert(data);
-        byte[] resBin = new byte[data.remaining()];
-        res.get(resBin);
-
-        Assert.assertArrayEquals(dataBin, resBin);
-    }
-
-    @org.junit.Test
     public void testConvertString() throws Exception {
         final IDataConverter converter = new BracketsDataConverter();
         final String dataStr = "hello there!! :)";
